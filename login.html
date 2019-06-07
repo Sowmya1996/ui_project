@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="loginbox">
+		<div align="center"><img src="logo2.png" class="logo" /></div>
+		<h1>Login Here</h1>
+		<form>
+			<p>Username</p>
+			<input type="text" placeholder="Enter your name" name="userid"/>
+			<p>Password</p>
+			<input type="password"  name="pswrd"/><br>
+			<input  type="button" onclick="check(this.form)" value="Login"/><br>
+			<a href="#">lost your password?</a><br>
+			<a href="#">Don't have an account?</a><br>
+			<input type="reset" value="Cancel"/>
+		</form>
+	</div>
+	
+	<script language="javascript">
+	function check(form)
+	{
+	 if(form.userid.value == "sowmya" && form.pswrd.value == "1234")
+	  {
+	    window.open('menue.html')
+	  }
+	 else
+	 {
+	   alert("Error Password or Username")
+	  }
+	}
+	</script>
+
+</body>
+</html>
